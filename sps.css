@@ -1,21 +1,22 @@
 *{
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .heading{
-    text-align: center;
-    padding: 30px;
+    height: 5rem;
+    line-height: 5rem;
     background-color: rgb(16, 31, 56);
     color: rgb(216, 151, 71);
 }
 
 .choices{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     gap: 5rem;
-    padding: 5rem;
+    margin-top: 5rem;
 }
     
 .choice{
@@ -24,6 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
 }
 
 img{
@@ -36,7 +38,6 @@ img{
     cursor: pointer;
     opacity: 0.8;
     background-color: black;
-    border-radius: 100px;
 }
 
 
@@ -45,7 +46,8 @@ img{
     justify-content: center;
     gap: 18rem;
     font-size: 3rem;
-    text-align: center;
+    margin-top: 3rem;
+    align-items: center;
 }
 #user_score, #comp_score{
     margin: 30px;
@@ -54,20 +56,19 @@ img{
 }
 
 .msg{
-    display: flex;
-    justify-content: center;
     margin-top: 2rem;
 }
 
 #msg{
     background-color: black;
-    padding: 0.75rem 2rem;
+    padding: 1rem;
     color: aliceblue;
     font-size: 2rem;
     border-radius: 1rem;
+    display: inline;
 }
 
-@media only screen and (max-width: 856px) {
+@media only screen and (max-width: 700px) {
     
     .scoreboard{
         gap: 8rem;
@@ -75,7 +76,6 @@ img{
     }
     .choices{
         gap: 2rem;
-        padding: 6rem;
     }
         
     .choice{
@@ -90,7 +90,7 @@ img{
     }
     
   }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 460px) {
 
     .scoreboard{
         gap: 5rem;
@@ -98,13 +98,12 @@ img{
     }
 
     #msg{
-        font-size: 1.5rem;    
+        font-size: 1rem;    
     }
 
     
     .choices{
         gap: 2rem;
-        padding: 7rem;
     }
         
     .choice{
